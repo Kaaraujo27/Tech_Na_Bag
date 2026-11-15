@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briefcase PC — Projeto Expotech 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">BRIEFCASE<span>PC</span> // EXPOTECH</div>
+    <nav>
+      <a href="#raiox">Raio-X Interativo</a>
+      <a href="#engenharia">Engenharia & Montagem</a>
+      <a href="#banca">Perguntas da Banca</a>
+      <a href="#equipe">Equipe</a>
+      <button class="btn-fair" id="toggleFairMode">Modo Feira: OFF</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <span class="badge">Projeto Destaque • Expotech</span>
+        <h1>Computador Desktop Integrado em Maleta de Alumínio</h1>
+        <p>
+          Um casemod funcional projetado para unir portabilidade, resistência mecânica e gerenciamento térmico eficiente dentro de uma maleta executiva rígida com interior isolado.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>100%</h3>
+            <p>Hardware Desktop Real</p>
+          </div>
+          <div class="stat">
+            <h3>2 Zonas</h3>
+            <p>Base + Tampa Superior</p>
+          </div>
+          <div class="stat">
+            <h3>0°C Extra</h3>
+            <p>Exaustão Direta na Tampa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="case-latch">
+          <div class="latch"></div>
+          <div class="latch"></div>
+        </div>
+        <h3 style="margin-bottom: 0.6rem; color: var(--aluminum);">Resumo Técnico do Protótipo</h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Diferente de notebooks convencionais, este sistema utiliza componentes padrão de gabinete (Placa-Mãe, Fonte ATX e Disco Rígido 3.5"), permitindo manutenção rápida, upgrades e demonstração didática de arquitetura de computadores.
+        </p>
+        <div style="background: #0b0d10; padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent);">
+          <strong style="display:block; font-size: 0.85rem; color: var(--accent);">DIFERENCIAL DE CONSTRUÇÃO</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main);">
+            Uso inteligente da tampa superior para fixação do armazenamento (HD) e abertura estrutural alinhada à ventoinha da fonte ATX.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <section id="raiox">
+      <div class="section-header">
+        <h2>Raio-X Interativo do Hardware</h2>
+        <p>Clique em qualquer componente da maleta abaixo para inspecionar sua função e adaptação estrutural.</p>
+      </div>
+
+      <div class="xray-container">
+        <div>
+          <div class="xray-controls">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Layout Interno: Tampa Superior + Base Inferior</span>
+            <button class="btn-airflow" id="toggleAirflow">Simular Fluxo de Ar: OFF</button>
+          </div>
+
+          <div class="briefcase-diagram">
+            <svg viewBox="0 0 600 440" width="100%" height="auto">
+              <rect x="20" y="15" width="560" height="190" rx="8" fill="#17191e" stroke="#9ca3af" stroke-width="5"/>
+              <text x="35" y="38" fill="#6b7280" font-size="11" font-weight="bold">TAMPA SUPERIOR (INTERIOR PRETO FOSCO)</text>
+
+              <g class="hotspot selected" data-part="hdd">
+                <rect x="45" y="52" width="110" height="135" rx="4" fill="#262a33" stroke="#4b5563" stroke-width="2"/>
+                <circle cx="100" cy="100" r="32" fill="#1f232b" stroke="#6b7280" stroke-width="1.5"/>
+                <rect x="55" y="142" width="90" height="36" fill="#14532d" opacity="0.85"/>
+                <text x="100" y="120" fill="#e5e7eb" font-size="11" text-anchor="middle" font-weight="bold">HD 3.5"</text>
+              </g>
+
+              <g class="hotspot" data-part="vents">
+                <circle cx="215" cy="120" r="38" fill="#111317" stroke="#4b5563" stroke-dasharray="3 3"/>
+                <circle cx="205" cy="110" r="2.5" fill="#d1d5db"/>
+                <circle cx="220" cy="105" r="2.5" fill="#d1d5db"/>
+                <circle cx="215" cy="120" r="2.5" fill="#d1d5db"/>
+                <circle cx="230" cy="122" r="2.5" fill="#d1d5db"/>
+                <circle cx="202" cy="130" r="2.5" fill="#d1d5db"/>
+                <circle cx="222" cy="135" r="2.5" fill="#d1d5db"/>
+                <text x="215" y="172" fill="#9ca3af" font-size="10" text-anchor="middle">Furos Ventilação</text>
+              </g>
+
+              <g class="hotspot" data-part="cutout">
+                <rect x="335" y="45" width="215" height="145" rx="4" fill="#090a0d" stroke="#6b7280" stroke-width="2"/>
+                <text x="442" y="115" fill="#9ca3af" font-size="12" text-anchor="middle" font-weight="bold">RECORTE TÉRMICO</text>
+                <text x="442" y="132" fill="#6b7280" font-size="10" text-anchor="middle">(Alinhado à Fonte ATX)</text>
+              </g>
+
+              <rect x="90" y="203" width="40" height="12" fill="#9ca3af"/>
+              <rect x="470" y="203" width="40" height="12" fill="#9ca3af"/>
+
+              <rect x="20" y="215" width="560" height="190" rx="8" fill="#1e222a" stroke="#d1d5db" stroke-width="6"/>
+
+              <g class="hotspot" data-part="mobo">
+                <rect x="42" y="232" width="255" height="130" rx="4" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/>
+                <circle cx="175" cy="292" r="42" fill="#111827" stroke="#6b7280" stroke-width="2"/>
+                <circle cx="175" cy="292" r="14" fill="#374151"/>
+                <rect x="115" y="340" width="120" height="10" fill="#15803d"/>
+                <text x="105" y="255" fill="#93c5fd" font-size="11" font-weight="bold">PLACA-MÃE & COOLER</text>
+              </g>
+
+              <g class="hotspot" data-part="hdd">
+                <path d="M 75 187 C 30 220, 35 280, 75 315" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+              </g>
+
+              <g class="hotspot" data-part="psu">
+                <rect x="315" y="232" width="240" height="130" rx="4" fill="#18181b" stroke="#52525b" stroke-width="2"/>
+                <circle cx="435" cy="297" r="48" fill="#09090b" stroke="#71717a" stroke-width="2"/>
+                <circle cx="435" cy="297" r="34" fill="none" stroke="#52525b" stroke-width="1.5"/>
+                <circle cx="435" cy="297" r="18" fill="none" stroke="#52525b" stroke-width="1.5"/>
+                <text x="435" y="248" fill="#e4e4e7" font-size="11" text-anchor="middle" font-weight="bold">FONTE ATX</text>
+              </g>
+
+              <g class="hotspot" data-part="cables">
+                <rect x="42" y="370" width="513" height="24" rx="4" fill="#111317" stroke="#374151"/>
+                <line x1="55" y1="378" x2="540" y2="378" stroke="#4b5563" stroke-width="3"/>
+                <line x1="55" y1="386" x2="540" y2="386" stroke="#374151" stroke-width="3"/>
+                <text x="298" y="386" fill="#d1d5db" font-size="10" text-anchor="middle" font-weight="bold">ORGANIZAÇÃO DE CABOS (CABLE MANAGEMENT FRONTAL)</text>
+              </g>
+
+              <rect x="235" y="405" width="130" height="24" rx="8" fill="#111827" stroke="#9ca3af" stroke-width="2"/>
+              <rect x="95" y="401" width="28" height="14" rx="2" fill="#e5e7eb"/>
+              <rect x="477" y="401" width="28" height="14" rx="2" fill="#e5e7eb"/>
+
+              <g class="airflow-layer" id="airflowLayer">
+                <path class="flow-arrow" d="M 175 220 L 175 280" stroke="#38bdf8" stroke-width="4" fill="none"/>
+                <text x="175" y="213" fill="#38bdf8" font-size="11" text-anchor="middle" font-weight="bold">AR FRIO (CPU)</text>
+                <path class="flow-arrow" d="M 435 285 L 435 120" stroke="#ef4444" stroke-width="4" fill="none"/>
+                <text x="442" y="95" fill="#ef4444" font-size="11" text-anchor="middle" font-weight="bold">EXAUSTÃO DIRETA</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="xray-details" id="xrayPanel">
+          <span class="xray-tag" id="partTag">ARMAZENAMENTO & CONEXÃO</span>
+          <h3 id="partTitle">HD 3.5" na Tampa + Cabo SATA Amarelo</h3>
+          <p id="partDesc">
+            Para liberar espaço na base da maleta para a placa-mãe e a fonte, o disco rígido mecânico foi fixado diretamente na tampa superior. O cabo SATA amarelo faz a ponte articulada acompanhando o movimento de abertura da maleta sem tensionar os conectores.
+          </p>
+          <div id="partSpecs">
+            <span class="spec-pill">Fixação Vertical</span>
+            <span class="spec-pill">Interface SATA III</span>
+            <span class="spec-pill">Otimização de Espaço</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="engenharia">
+      <div class="section-header">
+        <h2>Engenharia & Etapas de Construção</h2>
+        <p>Os desafios físicos e elétricos superados para transformar uma maleta comum em um gabinete funcional.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="step-num">01</div>
+          <h3>Mapeamento Dimensional</h3>
+          <p>Planejamento milimétrico da posição da Placa-Mãe e da Fonte ATX na base inferior para garantir o fechamento completo da tampa sem esmagar o cooler do processador.</p>
+        </div>
+
+        <div class="card">
+          <div class="step-num">02</div>
+          <h3>Cortes Térmicos na Tampa</h3>
+          <p>Execução do recorte retangular alinhado diretamente à ventoinha da fonte e furação circular próxima ao HD, evitando o efeito estufa quando a maleta está em operação.</p>
+        </div>
+
+        <div class="card">
+          <div class="step-num">03</div>
+          <h3>Isolamento Elétrico</h3>
+          <p>Como a estrutura externa é de alumínio (condutor elétrico), todo o interior recebeu revestimento isolante e espaçadores para eliminar qualquer risco de curto-circuito na placa-mãe.</p>
+        </div>
+
+        <div class="card">
+          <div class="step-num">04</div>
+          <h3>Cable Management Frontal</h3>
+          <p>Agrupamento e amarração dos chicotes da fonte na canaleta frontal junto à parede de alumínio, mantendo o fluxo de ar livre sobre as memórias RAM e o chipset.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="banca">
+      <div class="section-header">
+        <h2>Perguntas Frequentes da Banca Avaliadora</h2>
+        <p>Respostas técnicas rápidas sobre segurança, refrigeração e viabilidade do projeto.</p>
+      </div>
+
+      <div class="faq-item open">
+        <button class="faq-question">
+          1. O computador não superaquece dentro de uma maleta fechada?
+          <span>−</span>
+        </button>
+        <div class="faq-answer">
+          O projeto foi concebido para operar preferencialmente com a tampa aberta (modo bancada/estação), onde todos os coolers têm acesso livre ao ar ambiente. Além disso, o recorte retangular e os furos na tampa garantem passagem de ar mesmo se a tampa for abaixada temporariamente.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          2. Como vocês evitaram curto-circuito com a carcaça de alumínio?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          A placa-mãe não encosta diretamente no metal da maleta. Utilizamos espaçadores isolantes na base e revestimento interno não-condutor, garantindo que apenas o aterramento adequado da fonte ATX entre em contato com o chassi.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          3. Qual a vantagem desse Casemod em relação a um notebook comum?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Custo-benefício, facilidade de manutenção e modularidade. Enquanto um notebook possui peças soldadas e caras de substituir, nosso Briefcase PC aceita peças padrão de mercado, permitindo trocar memória, armazenamento ou fonte em poucos minutos, além de servir como ferramenta didática para visualizar o hardware funcionando.
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe">
+      <div class="section-header">
+        <h2>Integrantes da Equipe</h2>
+        <p>Preencha ou edite os nomes dos integrantes diretamente abaixo antes da apresentação na Expotech.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <input type="text" value="Integrante 1" placeholder="Nome do Aluno">
+          <input type="text" value="Arquitetura & Montagem" placeholder="Função no Projeto">
+        </div>
+        <div class="team-card">
+          <input type="text" value="Integrante 2" placeholder="Nome do Aluno">
+          <input type="text" value="Corte Estrutural & Térmica" placeholder="Função no Projeto">
+        </div>
+        <div class="team-card">
+          <input type="text" value="Integrante 3" placeholder="Nome do Aluno">
+          <input type="text" value="Elétrica & Cable Management" placeholder="Função no Projeto">
+        </div>
+        <div class="team-card">
+          <input type="text" value="Integrante 4" placeholder="Nome do Aluno">
+          <input type="text" value="Documentação & Apresentação" placeholder="Função no Projeto">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Projeto Casemod Briefcase PC • Desenvolvido para a Expotech 2026
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
