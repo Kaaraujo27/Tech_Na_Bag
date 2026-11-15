@@ -45,12 +45,25 @@ Este repositório acompanha uma página web interativa desenvolvida para apresen
     └── script.js     # Lógica do raio-x interativo, simulação de fluxo de ar e FAQs
 
 ```
+🛠️ Engenharia & Etapas de Construção
+
+1. Mapeamento Dimensional: Planejamento do posicionamento interno para garantir o fechamento da tampa sem esmagar o cooler do processador.
+
+2. Cortes Térmicos: Usinagem do recorte da fonte e furação de ventilação na tampa superior.   
+
+3. Isolamento Elétrico: Proteção do chassi condutor de alumínio.   
+
+4. Organização de Cabos: Roteamento frontal para segurança mecânica e estética.
+
+👥 Equipe do Projeto
+Integrante 1 — Arquitetura & Montagem. Kayque Araujo Rosario
+
+Integrante 2 — Corte Estrutural & Térmica. - Felippe Gonzalez
+
+Integrante 3 — Elétrica & Cable Management. - Samuel Fernandes
+
+Integrante 4 — Documentação & Apresentação. - Giovanni Bergamo
 
 👨‍💻 Projeto desenvolvido para fins de estudo.
 
 👨‍💻 Desenvolvido como projeto de prática em HTML, CSS, JavaScript. 
-
-Kayque Araujo Rosario
-Samuel Fernandes
-Giovanni Bergamo
-Felippe Gonzalez
