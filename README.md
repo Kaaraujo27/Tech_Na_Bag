@@ -10,7 +10,7 @@
 
 O **Briefcase PC** é um protótipo desenvolvido para a **Expotech 2026** que desafia o formato convencional de computadores portáteis. Diferente de notebooks tradicionais (que possuem componentes soldados e de difícil reparo), este projeto integra **hardware de desktop real** (Placa-Mãe, Fonte ATX e Disco Rígido 3.5") em uma maleta de alumínio estruturada.
 
-O objetivo principal é aliar **custo-benefício, modularidade, facilidade de manutenção** e servir como uma excelente ferramenta didática para demonstração de arquitetura de computadores[cite: 1, 3].
+O objetivo principal é aliar **custo-benefício, modularidade, facilidade de manutenção** e servir como uma excelente ferramenta didática para demonstração de arquitetura de computadores.
 
 ---
 
@@ -18,11 +18,11 @@ O objetivo principal é aliar **custo-benefício, modularidade, facilidade de ma
 
 * **Hardware 100% Desktop:** Utiliza peças padrão de mercado, facilitando upgrades e substituições rápidas.
 * **Arquitetura de 2 Zonas (Tampa Superior + Base Inferior):**
-  * **Base:** Abriga a placa-mãe, processador e a fonte ATX de forma equilibrada para o transporte[cite: 1, 3].
-  * **Tampa Superior:** Otimizada para fixação vertical do disco rígido mecânico (HD 3.5") e recortes estratégicos de ventilação[cite: 1, 3].
-* **Gestão Térmica Ativa e Passiva:** Recorte retangular milimetricamente alinhado à ventoinha da fonte ATX para exaustão direta de ar quente, evitando o efeito estufa[cite: 1, 3].
+  * **Base:** Abriga a placa-mãe, processador e a fonte ATX de forma equilibrada para o transporte.
+  * **Tampa Superior:** Otimizada para fixação vertical do disco rígido mecânico (HD 3.5") e recortes estratégicos de ventilação.
+* **Gestão Térmica Ativa e Passiva:** Recorte retangular milimetricamente alinhado à ventoinha da fonte ATX para exaustão direta de ar quente, evitando o efeito estufa.
 * **Isolamento Elétrico Seguro:** Revestimento interno e espaçadores isolantes para evitar curtos-circuitos com o chassi de alumínio.
-* **Cable Management Frontal:** Organização dos chicotes de energia em canaleta dedicada, mantendo o fluxo de ar livre e um visual limpo para exposição[cite: 2, 3].
+* **Cable Management Frontal:** Organização dos chicotes de energia em canaleta dedicada, mantendo o fluxo de ar livre e um visual limpo para exposição.
 
 ---
 
