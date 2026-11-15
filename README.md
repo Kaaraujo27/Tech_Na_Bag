@@ -44,6 +44,8 @@ Este repositório acompanha uma página web interativa desenvolvida para apresen
 └── js/
     └── script.js     # Lógica do raio-x interativo, simulação de fluxo de ar e FAQs
 
+```
+
 👨‍💻 Projeto desenvolvido para fins de estudo.
 
 👨‍💻 Desenvolvido como projeto de prática em HTML, CSS, JavaScript. 
